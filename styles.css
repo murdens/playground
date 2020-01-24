@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+.container {
+    height:100vh;
+    border: solid black;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: 50px auto 50px;
+    grid-gap: 20px;
+}
+
+.grid-item{
+    background-color: rgb(119, 51, 51);
+    border: 20px solid black;
+    padding: 20px;
+}
+.grid1{
+ grid-column-start: 1;
+ grid-column-end: 1;    
+}
+
+.grid2{
+    grid-row-start: 2;
+    grid-row-end: repeat;
+}
+.grid3{
+
+}
+.grid4{
+    grid-area=grid4;
+   }
